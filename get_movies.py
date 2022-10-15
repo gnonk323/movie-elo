@@ -2,8 +2,9 @@ from importlib.metadata import packages_distributions
 import requests
 import pandas
 import requests
+import config
 
-KEY = 'a4c7d95ac45652f394bbbd1cd825f0dd'
+KEY = config.API_KEY
 
 pages_to_retrieve = 10
 
