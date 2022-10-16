@@ -25,6 +25,11 @@ def add_new_movie():
     fill_csv_from_dict(movie_csv)
 
 
+def print_top_movies(num_movies):
+    for i in range(num_movies):
+        print(sort_by_rating()[i])
+
+
 def main():
     print("[1] Play random matches")
     print("[2] Add new movie")
@@ -36,6 +41,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # fill_dict_from_csv(movie_csv)
-    # print(sort_by_rating())
-    main()
+    fill_dict_from_csv(movie_csv)
+    print_top_movies(20)
+    # main()
